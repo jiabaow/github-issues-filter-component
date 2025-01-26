@@ -26,7 +26,6 @@ const GithubFilter = ({
         middleware: [offset({ mainAxis: 5, crossAxis: 10 }), flip(), shift()],
     });
     const dismiss = useDismiss(context);
-    // Merge all the interactions into prop getters
     const { getReferenceProps, getFloatingProps } = useInteractions([dismiss]);
 
     const [filterQuery, setFilterQuery] = useState("");
